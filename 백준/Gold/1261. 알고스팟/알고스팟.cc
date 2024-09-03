@@ -28,17 +28,7 @@ void bfs() {
 
 		if (x == n && y == m) {
 			int result = d;
-			for (auto it = q.begin(); it < q.end(); it++) {
-				T tp = *it;
-				int tx = get<0>(tp);
-				int ty = get<1>(tp);
-				int td = get<2>(tp);
-				if (tx == n && td == m) {
-					if (td < result) {
-						result = td;
-					}
-				}
-			}
+
 			cout << result << '\n';
 			return;
 		}
