@@ -39,7 +39,9 @@ int solution(vector<vector<int>> jobs) {
             time += d;
             answer += time - s;
         }else{
-            time = jobs[ji][0];
+            time = jobs[ji][0] + jobs[ji][1];
+            answer += jobs[ji][1];
+            ji++;
         }
     }
     
